@@ -13,7 +13,7 @@
 				"container": "targetdata"
 			},
 			"compression": {
-				"type": "ZipDeflate",
+				"type": "deflate",
 				"level": "Optimal"
 			}
 		}
