@@ -100,7 +100,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Source",
+						"referenceName": "TargetSink_dest",
 						"type": "DatasetReference"
 					}
 				]
