@@ -12,6 +12,10 @@
 				"type": "AzureBlobStorageLocation",
 				"folderPath": "sink",
 				"container": "targetdata"
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Optimal"
 			}
 		}
 	}
