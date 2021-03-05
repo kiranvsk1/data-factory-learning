@@ -22,24 +22,21 @@
 							"maxConcurrentConnections": 1,
 							"recursive": false,
 							"modifiedDatetimeStart": "2021-03-05T00:00:00.000Z",
+							"wildcardFileName": "*gz",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
 							"type": "XmlReadSettings",
-							"validationMode": "none",
+							"validationMode": "xsd",
 							"detectDataType": true,
-							"namespaces": true,
-							"compressionProperties": {
-								"type": "TarGZipReadSettings",
-								"preserveCompressionFileNameAsFolder": false
-							}
+							"namespaces": true
 						}
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "SourceXML",
+						"referenceName": "TargetXML",
 						"type": "DatasetReference"
 					}
 				]
