@@ -1,47 +1,6 @@
 {
 	"name": "pipeline1",
 	"properties": {
-		"activities": [
-			{
-				"name": "Copy data",
-				"type": "Copy",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "0.00:05:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"source": {
-						"type": "XmlSource",
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"maxConcurrentConnections": 1,
-							"recursive": false,
-							"modifiedDatetimeStart": "2021-03-05T00:00:00.000Z",
-							"wildcardFileName": "*gz",
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "XmlReadSettings",
-							"validationMode": "xsd",
-							"detectDataType": true,
-							"namespaces": true
-						}
-					},
-					"enableStaging": false
-				},
-				"inputs": [
-					{
-						"referenceName": "TargetXML",
-						"type": "DatasetReference"
-					}
-				]
-			}
-		],
 		"concurrency": 1,
 		"annotations": []
 	}
