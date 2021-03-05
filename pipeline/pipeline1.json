@@ -26,12 +26,15 @@
 						"type": "BinarySource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"deleteFilesAfterCompletion": true
+							"recursive": true,
+							"wildcardFileName": "*gz",
+							"deleteFilesAfterCompletion": false
 						},
 						"formatSettings": {
 							"type": "BinaryReadSettings",
 							"compressionProperties": {
-								"type": "TarGZipReadSettings"
+								"type": "TarGZipReadSettings",
+								"preserveCompressionFileNameAsFolder": false
 							}
 						}
 					},
