@@ -16,17 +16,14 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "XmlSource",
+						"type": "BinarySource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"modifiedDatetimeStart": "2021-03-04T00:00:00.000Z",
-							"enablePartitionDiscovery": false
+							"deleteFilesAfterCompletion": true
 						},
 						"formatSettings": {
-							"type": "XmlReadSettings",
-							"validationMode": "none",
-							"namespaces": true,
+							"type": "BinaryReadSettings",
 							"compressionProperties": {
 								"type": "TarGZipReadSettings"
 							}
@@ -42,7 +39,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "SourceXML",
+						"referenceName": "SourceBinarySink",
 						"type": "DatasetReference"
 					}
 				],
