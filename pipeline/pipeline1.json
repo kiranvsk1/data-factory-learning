@@ -23,13 +23,10 @@
 							"recursive": true,
 							"modifiedDatetimeStart": "2021-03-04T00:00:00.000Z",
 							"wildcardFileName": "*gz",
-							"deleteFilesAfterCompletion": false
+							"deleteFilesAfterCompletion": true
 						},
 						"formatSettings": {
-							"type": "BinaryReadSettings",
-							"compressionProperties": {
-								"type": "ZipDeflateReadSettings"
-							}
+							"type": "BinaryReadSettings"
 						}
 					},
 					"sink": {
