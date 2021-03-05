@@ -53,6 +53,9 @@
 			}
 		],
 		"concurrency": 1,
+		"folder": {
+			"name": "RESA"
+		},
 		"annotations": []
 	}
 }
