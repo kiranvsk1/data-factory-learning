@@ -12,6 +12,10 @@
 				"type": "AzureBlobStorageLocation",
 				"fileName": "*.gz",
 				"container": "data"
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Optimal"
 			}
 		}
 	}
