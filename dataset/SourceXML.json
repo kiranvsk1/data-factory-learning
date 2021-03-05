@@ -1,0 +1,22 @@
+{
+	"name": "SourceXML",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "*gz",
+				"container": "data"
+			},
+			"compression": {
+				"type": "TarGZip",
+				"level": "Optimal"
+			}
+		}
+	}
+}
