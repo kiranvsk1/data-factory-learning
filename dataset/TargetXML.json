@@ -11,6 +11,10 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"container": "shivatarget"
+			},
+			"compression": {
+				"type": "deflate",
+				"level": "Optimal"
 			}
 		}
 	}
