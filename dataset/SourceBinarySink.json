@@ -12,6 +12,10 @@
 				"type": "AzureBlobStorageLocation",
 				"fileName": "*.tar.gz",
 				"container": "data"
+			},
+			"compression": {
+				"type": "TarGZip",
+				"level": "Optimal"
 			}
 		}
 	}
