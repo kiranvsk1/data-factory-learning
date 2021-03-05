@@ -19,6 +19,7 @@
 						"type": "XmlSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
+							"maxConcurrentConnections": 1,
 							"recursive": true,
 							"modifiedDatetimeStart": "2021-03-05T00:00:00.000Z",
 							"enablePartitionDiscovery": false
