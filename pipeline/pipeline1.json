@@ -20,11 +20,11 @@
 						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"childItems",
 						"exists"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
