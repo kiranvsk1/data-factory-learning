@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "*.tar.gz",
+				"fileName": "*\\.tar\\.gz",
 				"container": "data"
 			},
 			"compression": {
