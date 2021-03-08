@@ -1,5 +1,5 @@
 {
-	"name": "DS_RESA_BLOB_TARGET",
+	"name": "DS_RESA_BLOB_SINK",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
