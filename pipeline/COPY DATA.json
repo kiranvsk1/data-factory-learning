@@ -40,13 +40,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "SourceBinarySink",
+						"referenceName": "DS_RESA_NAS_SOURCE",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Target",
+						"referenceName": "DS_RESA_BLOB_SINK",
 						"type": "DatasetReference"
 					}
 				]
