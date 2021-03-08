@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "PL_RESA_EDP_NAS_TO_BLOB",
 	"properties": {
 		"activities": [
 			{
@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "SourceBinarySink",
+						"referenceName": "DS_RESA_NAS_SOURCE",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
@@ -113,7 +113,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "SourceBinarySink",
+									"referenceName": "DS_RESA_NAS_SOURCE",
 									"type": "DatasetReference"
 								}
 							],
