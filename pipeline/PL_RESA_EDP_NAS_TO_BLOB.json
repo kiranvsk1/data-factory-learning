@@ -15,10 +15,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataset": {
-						"referenceName": "DS_RESA_NAS_SOURCE_LIST",
-						"type": "DatasetReference"
-					},
 					"fieldList": [
 						"exists"
 					],
@@ -117,13 +113,7 @@
 							"inputs": [
 								{
 									"referenceName": "DS_RESA_NAS_SOURCE",
-									"type": "DatasetReference",
-									"parameters": {
-										"filename": {
-											"value": "@activity('FILTER TAR GZ FILES').output",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
