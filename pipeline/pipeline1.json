@@ -20,8 +20,7 @@
 						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"exists",
-						"childItems"
+						"exists"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
