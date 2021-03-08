@@ -15,9 +15,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"fieldList": [
-						"exists"
-					],
+					"dataset": {
+						"referenceName": "DS_RESA_NAS_SOURCE",
+						"type": "DatasetReference"
+					},
+					"fieldList": [],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
 						"recursive": true,
