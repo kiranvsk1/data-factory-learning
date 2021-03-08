@@ -16,18 +16,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "DS_RESA_NAS_SOURCE",
-						"type": "DatasetReference",
-						"parameters": {
-							"filename": {
-								"value": ".*",
-								"type": "Expression"
-							}
-						}
+						"referenceName": "DS_RESA_NAS_SOURCE_LIST",
+						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"exists",
-						"childItems"
+						"exists"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
