@@ -94,7 +94,7 @@
 										"type": "AzureBlobStorageReadSettings",
 										"recursive": true,
 										"wildcardFileName": {
-											"value": "@activity('FILTER TAR GZ FILES').output",
+											"value": "item().name",
 											"type": "Expression"
 										},
 										"deleteFilesAfterCompletion": false
