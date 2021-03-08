@@ -50,7 +50,15 @@
 						"value": "@activity('Get File List').output.childItems",
 						"type": "Expression"
 					},
-					"isSequential": true
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Filter Tar GZipped Files",
+							"type": "Filter",
+							"dependsOn": [],
+							"userProperties": []
+						}
+					]
 				}
 			}
 		],
