@@ -17,7 +17,13 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "DS_RESA_NAS_SOURCE",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": ".*",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [
 						"exists",
