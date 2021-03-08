@@ -114,7 +114,13 @@
 							"inputs": [
 								{
 									"referenceName": "DS_RESA_NAS_SOURCE",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@activity('FILTER TAR GZ FILES').output",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
