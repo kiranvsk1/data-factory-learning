@@ -71,7 +71,7 @@
 								},
 								"ifTrueActivities": [
 									{
-										"name": "UNCOMPRESS AND COPY DATA_copy1",
+										"name": "UNCOMPRESS AND COPY DATA",
 										"type": "Copy",
 										"dependsOn": [],
 										"policy": {
