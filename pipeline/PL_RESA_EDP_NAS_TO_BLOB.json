@@ -125,7 +125,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "Target",
+									"referenceName": "DS_RESA_BLOB_SINK",
 									"type": "DatasetReference"
 								}
 							]
