@@ -53,59 +53,6 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "UNCOMPRESS AND COPY DATA",
-							"type": "Copy",
-							"dependsOn": [],
-							"policy": {
-								"timeout": "7.00:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"source": {
-									"type": "BinarySource",
-									"storeSettings": {
-										"type": "AzureBlobStorageReadSettings",
-										"recursive": true,
-										"wildcardFileName": {
-											"value": "item().name",
-											"type": "Expression"
-										},
-										"deleteFilesAfterCompletion": false
-									},
-									"formatSettings": {
-										"type": "BinaryReadSettings",
-										"compressionProperties": {
-											"type": "TarGZipReadSettings",
-											"preserveCompressionFileNameAsFolder": false
-										}
-									}
-								},
-								"sink": {
-									"type": "BinarySink",
-									"storeSettings": {
-										"type": "AzureBlobStorageWriteSettings"
-									}
-								},
-								"enableStaging": false
-							},
-							"inputs": [
-								{
-									"referenceName": "DS_RESA_NAS_SOURCE",
-									"type": "DatasetReference"
-								}
-							],
-							"outputs": [
-								{
-									"referenceName": "DS_RESA_BLOB_SINK",
-									"type": "DatasetReference"
-								}
-							]
-						},
-						{
 							"name": "If Condition1",
 							"type": "IfCondition",
 							"dependsOn": [],
