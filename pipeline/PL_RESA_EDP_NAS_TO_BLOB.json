@@ -59,7 +59,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"items": {
-									"value": "@item().name",
+									"value": "@item()",
 									"type": "Expression"
 								},
 								"condition": {
