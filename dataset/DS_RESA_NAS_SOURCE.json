@@ -1,5 +1,5 @@
 {
-	"name": "SourceBinarySink",
+	"name": "DS_RESA_NAS_SOURCE",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
