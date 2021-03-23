@@ -122,42 +122,6 @@
 												"type": "DatasetReference"
 											}
 										]
-									},
-									{
-										"name": "DELETE COPIED FILE FROM SOURCE",
-										"type": "Delete",
-										"dependsOn": [
-											{
-												"activity": "UNCOMPRESS AND COPY DATA",
-												"dependencyConditions": [
-													"Succeeded"
-												]
-											}
-										],
-										"policy": {
-											"timeout": "7.00:00:00",
-											"retry": 0,
-											"retryIntervalInSeconds": 30,
-											"secureOutput": false,
-											"secureInput": false
-										},
-										"userProperties": [],
-										"typeProperties": {
-											"dataset": {
-												"referenceName": "DS_RESA_NAS_SOURCE",
-												"type": "DatasetReference"
-											},
-											"enableLogging": false,
-											"storeSettings": {
-												"type": "AzureBlobStorageReadSettings",
-												"recursive": true,
-												"wildcardFileName": {
-													"value": "@{variables('filename')}",
-													"type": "Expression"
-												},
-												"enablePartitionDiscovery": false
-											}
-										}
 									}
 								]
 							}
